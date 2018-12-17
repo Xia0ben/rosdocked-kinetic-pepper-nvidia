@@ -54,7 +54,7 @@ RUN dpkg --add-architecture i386 && \
     apt-get update && apt-get install -y --no-install-recommends \
         gcc-multilib \
         libxext-dev:i386 \
-        libx11-dev:i386 &&
+        libx11-dev:i386
 
 # 32-bit libraries
 RUN make distclean && \
